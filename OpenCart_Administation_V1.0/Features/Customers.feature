@@ -6,7 +6,7 @@ Background: Steps common for all scenrios
     And Click on Login
     Then User can view Dashboard
 
-
+  @sanity
   Scenario: Add New Customer
 
     When User click on customers Menu
@@ -17,7 +17,8 @@ Background: Steps common for all scenrios
     And click on Save button
     Then User can view confirmation message "Warning: You do not have permission to modify customers!"
     And close browser
-
+   
+  @regression 
   Scenario: Filter Customer by Email
 
     When User click on customers Menu
@@ -26,7 +27,8 @@ Background: Steps common for all scenrios
     When Click on filter button
     Then User should found Email in the Filter table
     And close browser
-
+  
+  @regression
   Scenario: Filter Customer by Name
 
     When User click on customers Menu

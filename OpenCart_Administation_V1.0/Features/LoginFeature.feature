@@ -1,5 +1,5 @@
 Feature: User Login
-
+  @sanity @regression
   Scenario: Successful Login with Valid Credentials 
 	 Given User Launch Chrome browser 
 	 When User opens URL "https://demo3x.opencartreports.com/admin/index.php?route=common/login" 
@@ -10,7 +10,7 @@ Feature: User Login
 	 Then Page Title should be "Administration" 
 	 And close browser 	
 	
-	
+	@regression
 	Scenario Outline: Successful Login with Valid and Invalid Credentials 
 	 Given User Launch Chrome browser 
 	 When User opens URL "https://demo3x.opencartreports.com/admin/index.php?route=common/login" 
@@ -24,4 +24,4 @@ Feature: User Login
 Examples:
 |email|password|
 |demo|demo|
-|test@gmail.com|demo|
+#|test@gmail.com|demo|

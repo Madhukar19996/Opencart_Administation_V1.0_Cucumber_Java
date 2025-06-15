@@ -15,12 +15,10 @@ import pageObjects.AddNewCustomerPage;
 import pageObjects.FilterCustomersPage;
 import pageObjects.LoginPage;
 
-public class StepsDefi {
+// Child Class of Base Class
+public class StepsDefi extends BaseClass {
 
-	public WebDriver driver;
-	public LoginPage logginpage;
-	public AddNewCustomerPage addNewCustPg;
-	public FilterCustomersPage filCustPg;
+
 
 	@Given("User Launch Chrome browser")
 	public void user_launch_chrome_browser() {
@@ -151,7 +149,10 @@ public class StepsDefi {
 	public void user_enter_customer_info() {
 		addNewCustPg.enterFirstName("Madhukar");
 		addNewCustPg.enterLastName("Pandey");
-		addNewCustPg.enterEmail("TestingSdet@gmail.com");
+		
+		//addNewCustPg.enterEmail("TestingSdet@gmail.com");
+		
+		addNewCustPg.enterEmail(generateEmailId()+"@gmail.com");
 		addNewCustPg.enterTelephone("9987675543");
 		addNewCustPg.enterPassword("demo");
 		addNewCustPg.enterConfPassword("demo");

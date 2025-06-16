@@ -11,11 +11,11 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features= {".//Features/LoginFeature.feature",".//Features/Customers.feature"}, 
-	   // features= {".//Features/Customers.feature"},
+	    // features= {".//Features/LoginFeature.feature"},
 	   // features= ".//Features/",
 	   //tags="@regression or @sanity", //scenario under regression or sanity tag will be executed 
 	   // tags="@regression and @sanity", //will run scenario which is tagged with sanity as well regression
-		tags="@regression or not @sanity", ////will run scenario which is tagged with regression but not sanity
+		tags="@sanity", //will run scenario which is tagged with regression but not sanity
         glue="stepDefinations",
         dryRun=false,
         monochrome=true,

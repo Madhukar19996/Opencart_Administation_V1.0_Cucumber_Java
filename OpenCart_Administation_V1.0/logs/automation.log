@@ -1,0 +1,80 @@
+10:19:52.519 [main] INFO  - Stepup 1 is executed 
+10:19:52.556 [main] INFO  - User launch Chrome browser
+10:19:56.829 [main] INFO  - Url opened 
+10:19:57.007 [main] INFO  - Email and Password is entered  
+10:19:57.097 [main] INFO  - Login button is clicked
+10:20:02.006 [main] WARN  - Test Passed: Login feature page title is matched 
+10:20:02.692 [main] INFO  - User clicked on logout link 
+10:20:04.727 [main] WARN  - Test Passed: Login feature page title is matched 
+10:20:05.002 [main] WARN  - Browser is closed 
+14:38:18.468 [main] FATAL - Setup1 executed...
+14:38:18.521 [main] INFO  - User launch Chrome browser
+14:38:27.422 [main] INFO  - Url opened 
+14:38:27.657 [main] INFO  - Email and Password is entered  
+14:38:27.757 [main] INFO  - Login button is clicked
+14:38:33.909 [main] WARN  - Test Passed: Login feature page title is matched 
+14:38:34.646 [main] INFO  - User clicked on logout link 
+14:38:36.706 [main] WARN  - Test Passed: Login feature page title is matched 
+14:38:37.229 [main] WARN  - Browser is closed 
+14:48:13.440 [main] FATAL - Setup1 executed...
+14:48:13.481 [main] INFO  - User launch Chrome browser
+14:48:22.242 [main] INFO  - Url opened 
+14:48:22.565 [main] INFO  - Email and Password is entered  
+14:48:26.042 [main] INFO  - Login button is clicked
+14:48:30.085 [main] WARN  - Test Passed: Login feature page title is matched 
+14:48:30.855 [main] INFO  - User clicked on logout link 
+14:48:32.880 [main] WARN  - Test Passed: Login feature page title is matched 
+14:48:33.139 [main] WARN  - Browser is closed 
+14:49:35.348 [main] FATAL - Setup1 executed...
+14:49:35.386 [main] INFO  - User launch Chrome browser
+14:49:42.673 [main] INFO  - Url opened 
+14:49:43.020 [main] INFO  - Email and Password is entered  
+14:49:43.146 [main] INFO  - Login button is clicked
+14:49:48.353 [main] WARN  - Test Passed: Login feature page title is matched 
+14:49:49.360 [main] INFO  - User clicked on logout link 
+14:49:51.396 [main] WARN  - Test Passed: Login feature page title is matched 
+14:51:52.363 [main] FATAL - Setup1 executed...
+14:51:52.417 [main] INFO  - User launch Chrome browser
+14:51:57.227 [main] INFO  - Url opened 
+14:51:57.456 [main] INFO  - Email and Password is entered  
+14:52:00.507 [main] INFO  - Login button is clicked
+14:52:04.557 [main] WARN  - Test Passed: Login feature page title is matched 
+14:52:05.509 [main] INFO  - User clicked on logout link 
+14:52:07.531 [main] WARN  - Test Passed: Login feature page title is matched 
+17:02:16.844 [main] FATAL - Setup1 executed...
+17:02:16.887 [main] INFO  - User launch Chrome browser
+17:02:23.965 [main] INFO  - Url opened 
+17:02:24.293 [main] INFO  - Email and Password is entered  
+17:02:28.273 [main] INFO  - Login button is clicked
+17:02:32.308 [main] WARN  - Test Passed: Login feature page title is matched 
+17:02:33.097 [main] INFO  - User clicked on logout link 
+17:02:35.135 [main] WARN  - Test Passed: Login feature page title is matched 
+17:03:08.008 [main] FATAL - Setup1 executed...
+17:03:08.116 [main] INFO  - User launch Chrome browser
+17:03:13.210 [main] INFO  - Url opened 
+17:03:13.464 [main] INFO  - Email and Password is entered  
+17:03:18.056 [main] INFO  - Login button is clicked
+17:03:22.079 [main] WARN  - Test Passed: Login feature page title is matched 
+17:03:22.856 [main] INFO  - User clicked on logout link 
+17:03:24.882 [main] WARN  - Test Passed: Login feature page title is matched 
+17:04:36.126 [main] FATAL - Setup1 executed...
+17:04:36.169 [main] INFO  - User launch Chrome browser
+17:04:41.486 [main] INFO  - Url opened 
+17:04:41.758 [main] INFO  - Email and Password is entered  
+17:04:46.839 [main] INFO  - Login button is clicked
+17:04:50.863 [main] INFO  - user can view dashboard test passed.
+17:04:50.868 [main] INFO  - customer menu clicked
+17:04:50.991 [main] INFO  - customer menu item clicked
+17:04:52.287 [main] INFO  - Clicked on Add new button
+17:04:54.544 [main] INFO  - User can view Add new customer page- passed
+17:04:55.379 [main] INFO  - customer information entered
+17:04:55.861 [main] INFO  - clicked on Save button
+17:04:59.041 [main] INFO  - User can view confirmation message - passed
+17:05:06.489 [main] FATAL - Setup1 executed...
+17:05:06.490 [main] INFO  - User launch Chrome browser
+17:05:11.886 [main] INFO  - Url opened 
+17:05:12.166 [main] INFO  - Email and Password is entered  
+17:05:12.322 [main] INFO  - Login button is clicked
+17:05:17.251 [main] WARN  - Test Passed: Login feature page title is matched 
+17:05:18.013 [main] INFO  - User clicked on logout link 
+17:05:20.033 [main] WARN  - Test Passed: Login feature page title is matched 

@@ -192,12 +192,14 @@ public class StepsDefi extends BaseClass {
 		logger.info("User clicked on logout link ");
 	}
 
+	/*
 	@Then("close browser")
 	public void close_browser() {
 		//driver.close();
 		//logger.warn("Browser is closed ");
 
 	}
+	*/
 
 	//========================Add New Customer==============================
 

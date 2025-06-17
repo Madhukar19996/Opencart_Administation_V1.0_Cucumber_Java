@@ -7,7 +7,6 @@ import java.util.HashMap;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -17,6 +16,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.testng.Assert;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -32,7 +32,7 @@ import utilities.ReadConfig;
 // Child Class of Base Class
 public class StepsDefi extends BaseClass {
 
-	@Before("@sanity")
+	@Before("@sanity or @regression")
 	public void setup1()
 	{
 		//initialise logger
@@ -285,10 +285,10 @@ public class StepsDefi extends BaseClass {
 		}
 		if (bodytagText.contains(expectedConfirmationMessage)) {
 			logger.info("User can view confirmation message - passed");
-			Assert.assertTrue(true); // pass
+			org.testng.Assert.assertTrue(true); // pass
 		} else {
 			logger.warn("User can't view confirmation message - failed");
-			Assert.assertTrue(false); // fail
+			org.testng.Assert.assertTrue(false); // fail
 		}
 	}
 	//=================================Filter By Customer Email===============================
@@ -316,14 +316,14 @@ public class StepsDefi extends BaseClass {
 
 		if( filCustPg.filterCustomerByEmail(expectedEmail) ==true)
 		{
-			Assert.assertTrue(true);
+			org.testng.Assert.assertTrue(true);
 			logger.info("Test case is passed");
 
 
 		}
 		else {
 
-			Assert.assertTrue(false);
+			org.testng.Assert.assertTrue(false);
 			logger.warn("Test case is failed");
 
 		}
@@ -352,7 +352,7 @@ public class StepsDefi extends BaseClass {
 
 		if( filCustPg.filterCustomerByName(expectedName) ==true)
 		{
-			Assert.assertTrue(true);
+			org.testng.Assert.assertTrue(true);
 			logger.info("Test Case is Passed ");
 		}
 		else
@@ -365,7 +365,8 @@ public class StepsDefi extends BaseClass {
 	{
 
 		System.out.println("Teardown method is executed");
-		if(sc.isFailed()==true)
+		if(driver != null) {
+		if(sc.isFailed())
 		{
 
 			//Convert web driver object to TakeScreenshot
@@ -388,6 +389,7 @@ public class StepsDefi extends BaseClass {
 				e.printStackTrace();
 			}
 		}
+	}
 		driver.quit();
 
 	}

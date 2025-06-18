@@ -7,10 +7,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class AddNewCustomerPage extends BasePage {
     
-	 WebDriver driver;
+	
 	//constructor 
 	public AddNewCustomerPage(WebDriver driver) {
-		super(this.driver=driver);
+		super(driver);
 	}
 	//Find web elements on the web page
 	@FindBy(xpath="//a[normalize-space()='Customers']")	 

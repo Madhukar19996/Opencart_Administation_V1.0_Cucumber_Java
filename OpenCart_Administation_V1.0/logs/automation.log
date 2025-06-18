@@ -1,38 +1,19 @@
-2025-06-18 13:25:11 INFO  StepDef:218 - user can view dashboard test passed.
-2025-06-18 13:25:11 INFO  StepDef:228 - customer menu clicked
-2025-06-18 13:25:11 INFO  StepDef:235 - customer menu item clicked
-2025-06-18 13:25:13 INFO  StepDef:303 - Entered customer EMail
-2025-06-18 13:25:14 INFO  StepDef:309 - Clicked on filter button
-2025-06-18 13:25:14 INFO  StepDef:323 - Test case is passed
-2025-06-18 13:25:14 WARN  StepDef:11 - Browser is closed 
-2025-06-18 13:25:23 FATAL StepDef:105 - Setup1 executed...
-2025-06-18 13:25:23 INFO  StepDef:143 - User launch Chrome browser
-2025-06-18 13:25:28 INFO  StepDef:149 - Url opened 
-2025-06-18 13:25:28 INFO  StepDef:156 - Email and Password is entered  
-2025-06-18 13:25:28 INFO  StepDef:162 - Login button is clicked
-2025-06-18 13:25:36 INFO  StepDef:218 - user can view dashboard test passed.
-2025-06-18 13:25:36 INFO  StepDef:228 - customer menu clicked
-2025-06-18 13:25:36 INFO  StepDef:235 - customer menu item clicked
-2025-06-18 13:25:37 INFO  StepDef:340 - Entered customer Name
-2025-06-18 13:25:38 INFO  StepDef:309 - Clicked on filter button
-2025-06-18 13:25:41 INFO  StepDef:359 - Test Case is Passed 
-2025-06-18 13:25:41 WARN  StepDef:363 - Test Case is Failed 
-2025-06-18 13:25:41 WARN  StepDef:11 - Browser is closed 
-2025-06-18 13:25:45 FATAL StepDef:105 - Setup1 executed...
-2025-06-18 13:25:45 INFO  StepDef:143 - User launch Chrome browser
-2025-06-18 13:25:52 INFO  StepDef:149 - Url opened 
-2025-06-18 13:25:52 INFO  StepDef:156 - Email and Password is entered  
-2025-06-18 13:25:52 INFO  StepDef:162 - Login button is clicked
-2025-06-18 13:25:58 WARN  StepDef:182 - Test Passed: Login feature page title is matched 
-2025-06-18 13:25:59 INFO  StepDef:193 - User clicked on logout link 
-2025-06-18 13:26:01 WARN  StepDef:182 - Test Passed: Login feature page title is matched 
-2025-06-18 13:26:01 WARN  StepDef:11 - Browser is closed 
-2025-06-18 13:26:05 FATAL StepDef:105 - Setup1 executed...
-2025-06-18 13:26:05 INFO  StepDef:143 - User launch Chrome browser
-2025-06-18 13:26:12 INFO  StepDef:149 - Url opened 
-2025-06-18 13:26:12 INFO  StepDef:156 - Email and Password is entered  
-2025-06-18 13:26:12 INFO  StepDef:162 - Login button is clicked
-2025-06-18 13:26:18 WARN  StepDef:182 - Test Passed: Login feature page title is matched 
-2025-06-18 13:26:19 INFO  StepDef:193 - User clicked on logout link 
-2025-06-18 13:26:21 WARN  StepDef:182 - Test Passed: Login feature page title is matched 
-2025-06-18 13:26:21 WARN  StepDef:11 - Browser is closed 
+2025-06-18 14:29:53 WARN  StepDef:11 - Browser is closed 
+2025-06-18 14:29:57 FATAL StepDef:106 - Setup1 executed...
+2025-06-18 14:29:57 INFO  StepDef:144 - User launch Chrome browser
+2025-06-18 14:30:03 INFO  StepDef:150 - Url opened 
+2025-06-18 14:30:03 INFO  StepDef:157 - Email and Password is entered  
+2025-06-18 14:30:03 INFO  StepDef:163 - Login button is clicked
+2025-06-18 14:30:09 WARN  StepDef:183 - Test Passed: Login feature page title is matched 
+2025-06-18 14:30:10 INFO  StepDef:194 - User clicked on logout link 
+2025-06-18 14:30:12 WARN  StepDef:183 - Test Passed: Login feature page title is matched 
+2025-06-18 14:30:14 WARN  StepDef:11 - Browser is closed 
+2025-06-18 14:30:18 FATAL StepDef:106 - Setup1 executed...
+2025-06-18 14:30:18 INFO  StepDef:144 - User launch Chrome browser
+2025-06-18 14:30:28 INFO  StepDef:150 - Url opened 
+2025-06-18 14:30:28 INFO  StepDef:157 - Email and Password is entered  
+2025-06-18 14:30:29 INFO  StepDef:163 - Login button is clicked
+2025-06-18 14:30:36 WARN  StepDef:183 - Test Passed: Login feature page title is matched 
+2025-06-18 14:30:36 INFO  StepDef:194 - User clicked on logout link 
+2025-06-18 14:30:38 WARN  StepDef:183 - Test Passed: Login feature page title is matched 
+2025-06-18 14:30:39 WARN  StepDef:11 - Browser is closed 

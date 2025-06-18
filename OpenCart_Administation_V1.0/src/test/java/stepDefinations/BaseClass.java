@@ -9,6 +9,7 @@ import pageObjects.FilterCustomersPage;
 import pageObjects.LoginPage;
 import utilities.ReadConfig;
 
+
 // Parent class
 public class BaseClass {
 	
@@ -26,3 +27,4 @@ public class BaseClass {
 	}
 
 }
+

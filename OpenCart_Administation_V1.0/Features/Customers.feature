@@ -15,7 +15,7 @@ Background: Steps common for all scenrios
     Then User can view Add new customer page
     When User enter customer info
     And click on Save button
-    Then User can view confirmation message "Warning: You do not have permission to modify customers!"
+    Then User can view confirmation message "Warning: You do not have permission to modify customers!!"
     And close browser
    
   @regression 

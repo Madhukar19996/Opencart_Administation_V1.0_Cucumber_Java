@@ -19,6 +19,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.Assert;
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
@@ -47,11 +48,11 @@ public class StepsDefi extends BaseClass {
 		options1.addArguments("disable-infobars");
 		options1.addArguments("--start-maximized");
 
-		
+
 		options2.addArguments("--disable-notifications");
 		options2.addArguments("disable-infobars");
 		options2.addArguments("--start-maximized");
-		
+
 		options3.addArguments("--disable-notifications");
 		options3.addArguments("disable-infobars");
 		options3.addArguments("--start-maximized");
@@ -64,7 +65,7 @@ public class StepsDefi extends BaseClass {
 
 		options1.setExperimentalOption("prefs", prefs);
 		options2.setExperimentalOption("prefs", prefs);
-	//	options3.setExperimentalOption("prefs", prefs);
+		//	options3.setExperimentalOption("prefs", prefs);
 		// Launch Chrome with options
 		//options.addArguments("Headless");
 		readConfig = new ReadConfig();
@@ -199,7 +200,7 @@ public class StepsDefi extends BaseClass {
 		//logger.warn("Browser is closed ");
 
 	}
-	*/
+	 */
 
 	//========================Add New Customer==============================
 
@@ -362,40 +363,54 @@ public class StepsDefi extends BaseClass {
 		logger.warn("Test Case is Failed ");
 
 	}
-	@After()
+	//@After()
 	public void teardown1(Scenario  sc)
 	{
 
 		System.out.println("Teardown method is executed");
 		if(driver != null) {
-		if(sc.isFailed())
-		{
+			if(sc.isFailed())
+			{
 
-			//Convert web driver object to TakeScreenshot
+				//Convert web driver object to TakeScreenshot
 
-			String fileWithPath = ".\\screenshots\\failedScreenshot.png";
-			TakesScreenshot scrShot =((TakesScreenshot)driver);
+				String fileWithPath = ".\\screenshots\\failedScreenshot.png";
+				TakesScreenshot scrShot =((TakesScreenshot)driver);
 
-			//Call getScreenshotAs method to create image file
-			File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+				//Call getScreenshotAs method to create image file
+				File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
 
-			//Move image file to new destination
-			File DestFile=new File(fileWithPath);
+				//Move image file to new destination
+				File DestFile=new File(fileWithPath);
 
-			//Copy file at destination
+				//Copy file at destination
 
-			try {
-				FileUtils.copyFile(SrcFile, DestFile);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				try {
+					FileUtils.copyFile(SrcFile, DestFile);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 		}
-	}
 		driver.quit();
 
 	}
+	@AfterStep
+	public void addScreenshot(Scenario scenario) {
 
+		// this is for cucumber junit report
+
+		if(scenario.isFailed()) {
+			TakesScreenshot ts=(TakesScreenshot) driver;
+			final byte[] screenshot=ts.getScreenshotAs(OutputType.BYTES);
+			scenario.attach(screenshot, "image/png",scenario.getName());
+			driver.quit();
+
+		}
+		
+
+	}
 	/*@After()
 	public void teardown2()
 	{

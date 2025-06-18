@@ -20,7 +20,14 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
         glue="stepDefinations",
         dryRun=false,
         monochrome=true,
-        plugin= {"pretty", "html:reports/myreport.html"})
+         //features= {"@target/rerun.txt"},
+        //plugin= {"pretty", "html:reports/myreport.html"})
+        plugin= {"pretty", "html:reports/myreport.html", 
+		  "rerun:target/rerun.txt",
+		  "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+		}
+		
+		)
         
        // plugin= {"pretty","json:reports/cucumber-reports/myreport_json.json"})
 

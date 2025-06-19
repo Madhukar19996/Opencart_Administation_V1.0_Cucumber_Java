@@ -1,136 +1,97 @@
-🚀Opencart_Administration_V1.0_Cucumber_Java (BDD Cucumber Automation Framework )
+
+# Opencart_Administration_V1.0_Cucumber_Java
+
+🚀 Hybrid BDD Cucumber Automation Framework - Customized by Madhukar Pandey
+
+Description : The Online Shopping Website Management System is an eCommerce software application designed to streamline the operations of an online shopping business. It covers variours funtionalities such as product promotion, sales,and shipping. 
+
+The system includes two main interfaces:
+1. Admin Interface : This interface allows administators to manage customers , vendors,products,user accounts,and generate reports.
+
+2. User Interface : This interface provides users with feartures for registration,product search and display, shopping cart management,and products purchases.
+
+🤝 About the Author
+
+👨‍💻 Madhukar Pandey
+🚀 Automation Test Engineer | Passionate about Quality Engineering | BDD + Selenium + Java + CI/CD Enthusiast
+
+## Tech Stack
+| Technology     | Version  |
+| -------------- | -------- |
+| Java           | 11+      |
+| Maven          | 3.6+     |
+| Selenium       | 4.x      |
+| Cucumber       | 7.x      |
+| TestNG         | 7.x      |
+| ExtentReports  | 5.x      |
+| Jenkins        | Optional |
+| GitHub Actions | Optional |
 
 
-🔍 Overview
-This framework leverages the power of Behavior-Driven Development (BDD) using Cucumber and Selenium WebDriver with Java, following the principles of clean code, reusability, and extensibility.
 
-It supports:
+## Features
 
-Hybrid-driven architecture (Data + Keyword + BDD)
+✅ Hybrid Framework (Data + Keyword + BDD)
+✅ Selenium WebDriver with Page Object Model (POM)
+✅ TestNG for Suite Execution & Parallel Run
+✅ Customized ExtentReports with XML configuration
+✅ Tag-based execution (@Smoke, @Regression, etc.)
+✅ Configurable via Properties File
+✅ Integrated with Jenkins/CI/CD pipelines
+✅ Clean Code & Modular Design for Easy Maintenance
 
-Cross-browser execution
+## Dependencies
 
-Parallel execution via TestNG
 
-Detailed reporting (ExtentReports)
+1. https://mvnrepository.com/artifact/org.seleniumhq.selenium/   selenium-java 
 
-🛠️ Tech Stack
-Technology	Version
-Java	11+
-Maven	3.6+
-Selenium	4.x
-Cucumber	7.x
-TestNG	7.x
-ExtentReports	5.x
-Jenkins	(Optional)
-GIT and GITHUB
+2. https://mvnrepository.com/artifact/org.apache.poi/poi 
 
-📦 Project Structure
-bash
-Copy
-Edit
-├── src
-│   ├── main/java
-│   │   └── (Core utilities, drivers, base classes)
-│   ├── test/java
-│   │   ├── stepDefinitions
-│   │   ├── runners
-│   │   ├── pages
-│   │   └── utils
-│   └── resources
-│       ├── features
-│       └── config.properties
-├── pom.xml
-└── extent-config.xml
-🧩 Key Features
-🔗 BDD with Cucumber: Write test scenarios in simple Gherkin syntax.
+3. https://mvnrepository.com/artifact/io.cucumber/cucumber-java   
 
-🧪 TestNG Integration: Control execution flow and parallelism.
+4. https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core 
 
-🌐 Selenium WebDriver: Automate browser interactions.
+5. https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api 
 
-📊 ExtentReports: Interactive, visual, and customizable test reports.
+6. https://mvnrepository.com/artifact/commons-io/commons-io
 
-🔄 Reusable Page Object Model (POM): Maintainable and scalable design pattern.
+7. https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
 
-⚙️ Config-driven execution: Switch environments and browsers via property files.
+8. https://mvnrepository.com/artifact/org.testng/testng 
 
-🤖 CI/CD Ready: Seamless Jenkins integration.
+9.  https://mvnrepository.com/artifact/com.aventstack/extentreports-cucumber4-adapter 
+## 📊 Reporting
 
-🚀 How to Run
-1. Pre-requisites
-Install Java 11+, Maven, and a modern IDE (like IntelliJ IDEA / Eclipse).
+After execution, view the rich Extent HTML Report at:
 
-Chrome / Edge browsers.
-
-2. Run via Maven
-nginx
-Copy
-Edit
-mvn clean install
-3. Run Specific Tags
-nginx
-Copy
-Edit
-mvn test -Dcucumber.filter.tags="@Smoke"
-📝 Sample Feature File (Gherkin)
-gherkin
-Copy
-Edit
-Feature: Login Functionality
-
-  @Smoke @Regression
-  Scenario: Valid Login
-    Given User is on the Login page
-    When User enters valid credentials
-    Then User is redirected to the Dashboard
-📊 Reporting
-All execution reports will be available under:
-
-bash
-Copy
-Edit
 /test-output/ExtentReports/ExtentReport.html
-Fully customizable via extent-config.xml.
 
-🏗️ Framework Design Principles
-Hybrid-Driven: Combination of Data-Driven + Keyword + BDD.
+Custom look & feel configured via extent-config.xml.
+## 🤖 CI/CD Integration (Jenkins Ready)
 
-Single Responsibility: Every class has a clear purpose.
+1) Parametrized execution for Smoke/Regression suites.
 
-Loose Coupling: Minimized dependency across components.
+2) Headless execution on Jenkins nodes.
 
-Scalability First: Easy to extend with new modules.
+3) ExtentReport generated post build.
+## 📬 Feedback & Contributions
 
-🔗 CI/CD Integration (Optional)
-This framework is designed for Jenkins pipelines with easy parameterization to run smoke/regression suites on-demand or via scheduled triggers.
+Suggestions and pull requests are welcome!
+Fork this repo and contribute to make it even better.
 
-🤝 Contributing
-Fork this repo.
+##  Test Screenshot
+![Cucumber_Report](https://github.com/user-attachments/assets/f036e95b-fdbf-4ea1-885d-64521de6612d)
 
-Create your feature branch (git checkout -b feature/AmazingFeature).
+![Cucumber_report2](https://github.com/user-attachments/assets/b5460062-16c3-4d4a-b378-b66fc6942bdd)
 
-Commit changes (git commit -m 'Add amazing feature').
+![Jenkins](https://github.com/user-attachments/assets/c9d4549a-aaa3-4f14-8690-4c052361841c)
 
-Push to the branch (git push origin feature/AmazingFeature).
+![image](https://github.com/user-attachments/assets/4966ca86-bc49-4a76-8fc6-0ad8ca5f1f8e)
 
-Create a pull request.
-
-📬 Contact & Support
-For any queries, feel free to reach out:
-📧 madhukar19996@gmail.com
-
-##Screenshots:
-
-![Cucumber_Report](https://github.com/user-attachments/assets/b926d20c-ff69-4752-90fd-9302d39721c3)
-
-![Jenkins2](https://github.com/user-attachments/assets/581dcfe8-5333-4078-bd6b-6195416313de)
-b89)
-
-
-![Cucumber_report2](https://github.com/user-attachments/assets/15c9618f-70f6-467d-b930-69a95ee1b121)
+![image](https://github.com/user-attachments/assets/cd15247e-0630-49ce-8f71-8feeea33a98b)
 
 
 
-⚠️ Disclaimer
-This is a sample automation framework built for educational and professional development purposes.
+
+
+
